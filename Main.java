@@ -16,10 +16,9 @@ public class Main {
             System.out.println("4 - Remover Produto");
             System.out.println("0 - Sair");
 
-            opcao = scanner.nextInt();
-
             System.out.println("Digite uma opção: ");
-                
+            opcao = scanner.nextInt();
+  
             if (opcao == 1) {
 
                 System.out.println("Nome do produto:  ");
@@ -41,8 +40,8 @@ public class Main {
 
             } else if (opcao == 3){
                 System.out.println("Qual produto vc quer buscar? ");
-                String Buscarnome = scanner.next();
-                estoque.buscarProduto(Buscarnome);
+                String buscarNome = scanner.next();
+                estoque.buscarProduto(buscarNome);
 
             } else if (opcao == 4){
                 System.out.println("Qual produto você quer remover? ");
